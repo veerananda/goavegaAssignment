@@ -47,7 +47,7 @@ func TestCronParser(t *testing.T) {
 			month         JAN
 			day of week   1 2 3 4 5
 			command       /usr/bin/find`},
-		{"test string 7", cron{minutes: "*/15", hours: "0/", dayOfMonth: "1,15", month: "JAN", dayOfWeek: "1-5", command: "/usr/bin/find"},
+		{"test string 7", cron{minutes: "*/15", hours: "25", dayOfMonth: "1,15", month: "JAN", dayOfWeek: "1-5", command: "/usr/bin/find"},
 			`Invalid cron message, Please check and retry!`},
 	}
 
